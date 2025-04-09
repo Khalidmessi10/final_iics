@@ -1,0 +1,549 @@
+Agent Group Id: 012X0N2500000000002U
+Agent Group Name: MSI
+Agent Name: MSI
+Agent Id: 012X0N0800000000002U
+Task Name: RESULT_STAGING
+Task Type: MTT
+Task Id: 012X0N0Z00000000000N
+Run Id: 1
+Service Id: 1840643
+Started By: iics2k25@gmail.com
+Run Context Type: ICS_UI
+04/10/2025 02:01:29 **** Importing Connection: Conn_012X0N0B000000000009 ...
+04/10/2025 02:01:29 **** Importing Source Definition: CDW_UAS_F_RESULT_CL_03_txt ...
+04/10/2025 02:01:29 **** Importing Source Definition: CDW_UAS_F_RESULT_CL_02_txt ...
+04/10/2025 02:01:29 **** Importing Source Definition: CDW_UAS_F_RESULT_CL_1_txt ...
+04/10/2025 02:01:29 **** Importing Target Definition: CDW_UAS_STG_RESULT ...
+04/10/2025 02:01:29 **** Importing Target Definition: CDW_UAS_ERR ...
+04/10/2025 02:01:29 **** Importing SessionConfig: default_session_config ...
+    <Warning> :  The Error Log DB Connection value should have Relational: as the prefix.
+    <Warning> :  Invalid value  for attribute Error Log DB Connection. Will use the default value 
+    Validating Source Definition  CDW_UAS_F_RESULT_CL_1_txt...
+    Validating Source Definition  CDW_UAS_F_RESULT_CL_02_txt...
+    Validating Source Definition  CDW_UAS_F_RESULT_CL_03_txt...
+    Validating Target Definition  CDW_UAS_ERR...
+    Validating Target Definition  CDW_UAS_STG_RESULT...
+04/10/2025 02:01:29 **** Importing Mapping: Mapping0 ...
+    <Warning> :  transformation: Source - Invalid value  for attribute Output is repeatable. Will use the default value Never    [transformation< Source > ] 
+    <Warning> :  Invalid table attribute: Thousand Separator    [transformation< Source > ] 
+    <Warning> :  Invalid table attribute: Decimal Separator    [transformation< Source > ] 
+    <Warning> :  Invalid table attribute: Datetime Format    [transformation< Source > ] 
+    <Warning> :  transformation: Source1 - Invalid value  for attribute Output is repeatable. Will use the default value Never    [transformation< Source1 > ] 
+    <Warning> :  Invalid table attribute: Thousand Separator    [transformation< Source1 > ] 
+    <Warning> :  Invalid table attribute: Decimal Separator    [transformation< Source1 > ] 
+    <Warning> :  Invalid table attribute: Datetime Format    [transformation< Source1 > ] 
+    <Warning> :  transformation: Source2 - Invalid value  for attribute Output is repeatable. Will use the default value Never    [transformation< Source2 > ] 
+    <Warning> :  Invalid table attribute: Thousand Separator    [transformation< Source2 > ] 
+    <Warning> :  Invalid table attribute: Decimal Separator    [transformation< Source2 > ] 
+    <Warning> :  Invalid table attribute: Datetime Format    [transformation< Source2 > ] 
+Validating transformations of mapping Mapping0...
+Validating mapping variable(s).
+04/10/2025 02:01:29 **** Importing Workflow: wf_mtt_012X0N0Z00000000000N ...
+    <Warning> :  Invalid value None for attribute Pushdown Optimization Context. Will use the default value None     [Session< s_mtt_012X0N0Z00000000000N > ] 
+    <Warning> :  The value entered is not a valid integer.
+    <Warning> :  Invalid value NO for attribute Fail task after wait time. Will use the default value 
+[Summary for Custom Transformation Union]
+     Is a new repartition point.
+     Number of groups changed from 1 to 3.
+
+Successfully extracted session instance [s_mtt_012X0N0Z00000000000N].  Starting repository sequence id is [21163979]
+======================================================================
+PETL_24036 [2025-04-10 02:01:28.808] Beginning the prepare phase for the session.
+TM_6721 [2025-04-10 02:01:28.808] Started [Connect to Repository].
+TM_6722 [2025-04-10 02:01:28.847] Finished [Connect to Repository].  It took [0.0387149] seconds.
+TM_6721 [2025-04-10 02:01:28.848] Started [Fetch Session from Repository].
+TM_6722 [2025-04-10 02:01:29.032] Finished [Fetch Session from Repository].  It took [0.184414] seconds.
+VAR_27085 [2025-04-10 02:01:29.219] Parameter file [C:\Program Files\Informatica Cloud Secure Agent\apps\Data_Integration_Server\data\parameters\s_mtt_012X0N0Z00000000000N.param] is opened for [session [wf_mtt_012X0N0Z00000000000N.s_mtt_012X0N0Z00000000000N]].
+VAR_27062 [2025-04-10 02:01:29.219] Warning! Cannot find section for worklet [wf_mtt_012X0N0Z00000000000N] and folder [] in parameter file [C:\Program Files\Informatica Cloud Secure Agent\apps\Data_Integration_Server\data\parameters\s_mtt_012X0N0Z00000000000N.param].
+TT_11094 [2025-04-10 02:01:29.221] The Lookup transformation [Lookup_Faculty] requires that a string or binary lookup port and an input port in any lookup condition have the same length. Since lookup port [FACULTY_NAME] had a length of [25] and input port [src_FACULTY_NAME] had a length of [30], the larger length for both ports is used.
+TM_6721 [2025-04-10 02:01:29.338] Started [Partition Group Formation].
+TM_6722 [2025-04-10 02:01:29.339] Finished [Partition Group Formation].  It took [0.00100207] seconds.
+PETL_24037 [2025-04-10 02:01:29.339] Finished the prepare phase for the session.
+DIRECTOR> TM_6228 [2025-04-10 02:01:29.339] Writing session output to log file [C:\PROGRA~1\INFORM~1\apps\Data_Integration_Server\data\..\logs\s_mtt_0O95v48K6yQb2cyFrz8jys_1.log].
+DIRECTOR> VAR_27085 [2025-04-10 02:01:29.340] Parameter file [C:\Program Files\Informatica Cloud Secure Agent\apps\Data_Integration_Server\data\parameters\s_mtt_012X0N0Z00000000000N.param] is opened for [session [wf_mtt_012X0N0Z00000000000N.s_mtt_012X0N0Z00000000000N]].
+DIRECTOR> VAR_27062 [2025-04-10 02:01:29.340] Warning! Cannot find section for worklet [wf_mtt_012X0N0Z00000000000N] and folder [] in parameter file [C:\Program Files\Informatica Cloud Secure Agent\apps\Data_Integration_Server\data\parameters\s_mtt_012X0N0Z00000000000N.param].
+DIRECTOR> TM_6014 [2025-04-10 02:01:29.341] Initializing session [s_mtt_012X0N0Z00000000000N] at [Thu Apr 10 02:01:29 2025].
+DIRECTOR> TM_6683 [2025-04-10 02:01:29.341] Repository Name: [XMLRepository]
+DIRECTOR> TM_6684 [2025-04-10 02:01:29.341] Server Name: [rDTM]
+DIRECTOR> TM_6686 [2025-04-10 02:01:29.341] Folder: []
+DIRECTOR> TM_6685 [2025-04-10 02:01:29.341] Workflow: [wf_mtt_012X0N0Z00000000000N] Run Instance Name: [] Run Id: [0]
+DIRECTOR> TM_6992 [2025-04-10 02:01:29.341] Operating System Type [NT]
+DIRECTOR> TM_6101 [2025-04-10 02:01:29.341] Mapping name: Mapping0.
+DIRECTOR> TM_6964 [2025-04-10 02:01:29.342] Date format for the Session is [MM/DD/YYYY HH24:MI:SS.US]
+DIRECTOR> TM_6703 [2025-04-10 02:01:29.342] Session [s_mtt_012X0N0Z00000000000N] is run by 64-bit Integration Service  [], version [10.2.0 HotFix2], build [0321].
+MANAGER> PETL_24091 [2025-04-10 02:01:30.408] Thread [MANAGER] has the ID [1].
+MANAGER> PETL_24058 [2025-04-10 02:01:30.408] Running Partition Group [1].
+MANAGER> PETL_24000 [2025-04-10 02:01:30.408] Parallel Pipeline Engine initializing.
+MONITOR> PETL_24091 [2025-04-10 02:01:30.408] Thread [MONITOR] has the ID [2].
+MANAGER> PETL_24001 [2025-04-10 02:01:30.408] Parallel Pipeline Engine running.
+MANAGER> PETL_24003 [2025-04-10 02:01:30.408] Initializing session run.
+MAPPING> PETL_24091 [2025-04-10 02:01:30.408] Thread [MAPPING] has the ID [3].
+MAPPING> CMN_1569 [2025-04-10 02:01:30.409] Server Mode: [UNICODE]
+MAPPING> CMN_1570 [2025-04-10 02:01:30.410] Server Code page: [MS Windows Latin 1 (ANSI), superset of Latin1]
+MAPPING> TM_6151 [2025-04-10 02:01:30.410] The session sort order is [Binary].
+MAPPING> TM_6185 [2025-04-10 02:01:30.410] Warning. Code page validation is disabled in this session.
+MAPPING> CMN_65109 [2025-04-10 02:01:30.410] Current Timezone:[UTC +5:30]
+MAPPING> CMN_65111 [2025-04-10 02:01:30.410] Current Process ID:[51596]
+MAPPING> TM_6155 [2025-04-10 02:01:30.410] Using HIGH precision processing.
+MAPPING> TM_6180 [2025-04-10 02:01:30.410] Deadlock retry logic will not be implemented.
+MAPPING> TM_6187 [2025-04-10 02:01:30.410] Session target-based commit interval is [10000].
+MAPPING> TM_6307 [2025-04-10 02:01:30.410] DTM error log disabled. 
+MAPPING> TE_7022 [2025-04-10 02:01:30.413] TShmWriter: Initialized
+MAPPING> DBG_21075 [2025-04-10 02:01:30.419] Connecting to database [odbc://dbtype=Oracle;host=localhost;port=1522;database=xe], Type [ODBC], User [final]
+MAPPING> CMN_1021 [2025-04-10 02:01:30.665] Database driver event...
+CMN_1021 [Reading driver properties from : C:\Program Files\Informatica Cloud Secure Agent\apps\Data_Integration_Server\72.0.1.1\ICS\main\bin\rdtm/../../../../drivers/driver.properties
+DTM flag to determine driver name is not found hence default to [DataDirect CLOSED 8.0 Oracle Wire Protocol for Informatica - BASE] driver.
+ODBC Event Using array fetches.
+ODBC Event Using Single Row Inserts. connect string = [Driver=DataDirect CLOSED 8.0 Oracle Wire Protocol for Informatica - BASE;Host=localhost;ServiceName=xe;Port=1522;UID=final;AS=6000000;EBL=0;ENS=1;IACP=4;ETWT=1;WorkArounds2=2;EnableEmptyLobs=1]. userid = [final]
+ODBC Version:	03.80.0000
+.
+DBMS Name:	Oracle
+.
+DBMS Version:	11.02.0000 Oracle 11.2.0.2.0
+.
+Driver Name:	dwora28.dll
+.
+Driver Version:	08.02.3072 (B1917, U1723)
+.
+Driver ODBC Version:	03.52
+.]
+
+MAPPING> CMN_1716 [2025-04-10 02:01:30.665] Lookup [Lookup_Stud] uses database connection [Relational:Conn_012X0N0B000000000009] in code page [UTF-8 encoding of Unicode]
+MAPPING> CMN_1716 [2025-04-10 02:01:30.666] Lookup [Lookup_College] uses database connection [Relational:Conn_012X0N0B000000000009] in code page [UTF-8 encoding of Unicode]
+MAPPING> CMN_1716 [2025-04-10 02:01:30.667] Lookup [Lookup_Faculty] uses database connection [Relational:Conn_012X0N0B000000000009] in code page [UTF-8 encoding of Unicode]
+MAPPING> CMN_1716 [2025-04-10 02:01:30.667] Lookup [Lookup_Dept] uses database connection [Relational:Conn_012X0N0B000000000009] in code page [UTF-8 encoding of Unicode]
+MAPPING> CMN_1716 [2025-04-10 02:01:30.667] Lookup [Lookup_Course] uses database connection [Relational:Conn_012X0N0B000000000009] in code page [UTF-8 encoding of Unicode]
+MAPPING> CMN_1716 [2025-04-10 02:01:30.668] Lookup [Lookup_Time] uses database connection [Relational:Conn_012X0N0B000000000009] in code page [UTF-8 encoding of Unicode]
+MAPPING> TT_11171 [2025-04-10 02:01:30.672] The Sequence Generator transformation [Sequence] has the [CurrVal] port connected.  When you connect the CURRVAL port, the Integration Services processes one row in each block. 
+MAPPING> TM_6007 [2025-04-10 02:01:30.672] DTM initialized successfully for session [s_mtt_012X0N0Z00000000000N]
+DIRECTOR> PETL_24033 [2025-04-10 02:01:30.674] All DTM Connection Info: [<NONE>].
+MANAGER> PETL_24004 [2025-04-10 02:01:30.674] Starting pre-session tasks. : (Thu Apr 10 02:01:30 2025)
+PRE-SESS> PETL_24091 [2025-04-10 02:01:30.674] Thread [PRE-SESS] has the ID [4].
+MANAGER> PETL_24027 [2025-04-10 02:01:30.743] Pre-session task completed successfully. : (Thu Apr 10 02:01:30 2025)
+DIRECTOR> PETL_24006 [2025-04-10 02:01:30.743] Starting data movement.
+DIRECTOR> TT_11183 [2025-04-10 02:01:30.743] Enabled using [1 (auto)] additional concurrent pipelines to build lookup caches. (Session likely will build or refresh [6] lookup caches; [0] on-demand only).
+MAPPING> TM_6660 [2025-04-10 02:01:30.743] Total Buffer Pool size is 4532320 bytes and Block size is 98496 bytes.
+LKPDP_1> PETL_24091 [2025-04-10 02:01:30.745] Thread [LKPDP_1] has the ID [5].
+LKPDP_1> DBG_21097 [2025-04-10 02:01:30.745] Lookup Transformation [Lookup_Stud]: Default sql to create lookup cache: SELECT STUD_ID,STUD_F_NAME,STUD_L_NAME,STUD_M_NAME,STUD_STREET,STUD_CITY,STUD_STATE,STUD_COUNTRY,STUD_ZIP,STUD_PHONE,STUD_EMAIL,CREATED_DATE,END_DATE,IS_ACTIVE,STUD_ROLLNO FROM "FINAL"."STUDENT" ORDER BY STUD_ROLLNO
+
+LKPDP_1> TE_7212 [2025-04-10 02:01:30.747] Increasing [Index Cache] size for transformation [Lookup_Stud] from [29826161] to [29829600].
+LKPDP_1> TE_7212 [2025-04-10 02:01:30.747] Increasing [Data Cache] size for transformation [Lookup_Stud] from [59652322] to [59654144].
+LKPDP_2> PETL_24091 [2025-04-10 02:01:30.752] Thread [LKPDP_2] has the ID [6].
+LKPDP_2> DBG_21097 [2025-04-10 02:01:30.753] Lookup Transformation [Lookup_College]: Default sql to create lookup cache: SELECT COLLEGE_CODE,COLLEGE_STREET,COLLEGE_CITY,COLLEGE_STATE,COLLEGE_ZIP,COLLEGE_PHONE,COLLEGE_NAME FROM "FINAL"."COLLEGE" ORDER BY COLLEGE_NAME
+
+LKPDP_2> TE_7212 [2025-04-10 02:01:30.754] Increasing [Index Cache] size for transformation [Lookup_College] from [29826161] to [29829120].
+LKPDP_2> TE_7212 [2025-04-10 02:01:30.754] Increasing [Data Cache] size for transformation [Lookup_College] from [59652322] to [59654144].
+LKPDP_3> PETL_24091 [2025-04-10 02:01:30.760] Thread [LKPDP_3] has the ID [7].
+LKPDP_3> DBG_21097 [2025-04-10 02:01:30.760] Lookup Transformation [Lookup_Faculty]: Default sql to create lookup cache: SELECT FACULTY_CODE,FACULTY_DESIGNATION,FACULTY_QUALIFICATION,FACULTY_NAME FROM "FINAL"."FACULTY" ORDER BY FACULTY_NAME
+
+LKPDP_3> TE_7212 [2025-04-10 02:01:30.762] Increasing [Index Cache] size for transformation [Lookup_Faculty] from [29826161] to [29828400].
+LKPDP_3> TE_7212 [2025-04-10 02:01:30.762] Increasing [Data Cache] size for transformation [Lookup_Faculty] from [59652322] to [59654144].
+LKPDP_4> PETL_24091 [2025-04-10 02:01:30.767] Thread [LKPDP_4] has the ID [8].
+LKPDP_4> DBG_21097 [2025-04-10 02:01:30.767] Lookup Transformation [Lookup_Dept]: Default sql to create lookup cache: SELECT DEPARTMENT_ID,DEPARTMENT_NAME,DEPARTMENT_PHONE,DEPARTMENT_HEAD,DEPARTMENT_NO FROM "FINAL"."DEPARTMENT" ORDER BY DEPARTMENT_NO
+
+LKPDP_4> TE_7212 [2025-04-10 02:01:30.769] Increasing [Index Cache] size for transformation [Lookup_Dept] from [29826161] to [29829600].
+LKPDP_4> TE_7212 [2025-04-10 02:01:30.769] Increasing [Data Cache] size for transformation [Lookup_Dept] from [59652322] to [59654144].
+LKPDP_5> PETL_24091 [2025-04-10 02:01:30.774] Thread [LKPDP_5] has the ID [9].
+LKPDP_5> DBG_21097 [2025-04-10 02:01:30.775] Lookup Transformation [Lookup_Course]: Default sql to create lookup cache: SELECT COURSE_CODE,DEPARTMENT_ID,MARK_REQ,COURSE_NAME FROM "FINAL"."COURSE" ORDER BY COURSE_NAME
+
+LKPDP_5> TE_7212 [2025-04-10 02:01:30.777] Increasing [Index Cache] size for transformation [Lookup_Course] from [29826161] to [29828400].
+LKPDP_5> TE_7212 [2025-04-10 02:01:30.777] Increasing [Data Cache] size for transformation [Lookup_Course] from [59652322] to [59654144].
+LKPDP_6> PETL_24091 [2025-04-10 02:01:30.782] Thread [LKPDP_6] has the ID [10].
+LKPDP_6> DBG_21097 [2025-04-10 02:01:30.783] Lookup Transformation [Lookup_Time]: Default sql to create lookup cache: SELECT DAY,MONTH,QUARTER,YEAR,TIME_ID FROM "FINAL"."CDW_UAS_D_TIME" ORDER BY TIME_ID
+
+LKPDP_6> TE_7212 [2025-04-10 02:01:30.784] Increasing [Index Cache] size for transformation [Lookup_Time] from [29826161] to [29827600].
+LKPDP_6> TE_7212 [2025-04-10 02:01:30.784] Increasing [Data Cache] size for transformation [Lookup_Time] from [59652322] to [59654144].
+DIRECTOR> TT_11184 [2025-04-10 02:01:30.788] Starting additional concurrent pipeline to build the lookup cache needed by Lookup transformation [Lookup_Stud].
+LKPDP_1> TM_6660 [2025-04-10 02:01:30.789] Total Buffer Pool size is 609824 bytes and Block size is 65536 bytes.
+READER_1_1_1> PETL_24091 [2025-04-10 02:01:30.789] Thread [READER_1_1_1] has the ID [11].
+READER_1_1_1> DBG_21437 [2025-04-10 02:01:30.790] Reader: Source is a file-based source.
+READER_1_1_1> FR_3118 [2025-04-10 02:01:30.790] source [Source1] code page: [UTF-8 encoding of Unicode]
+LKPDP_1:READER_1_1> PETL_24091 [2025-04-10 02:01:30.790] Thread [LKPDP_1:READER_1_1] has the ID [12].
+READER_1_1_1> FR_3071 [2025-04-10 02:01:30.790] Maximum Line sequential buffer length is 1026.
+READER_1_1_1> BLKR_16003 [2025-04-10 02:01:30.791] Initialization completed successfully.
+LKPDP_1:READER_1_1> DBG_21438 [2025-04-10 02:01:30.792] Reader: Source is [odbc://dbtype=Oracle;host=localhost;port=1522;database=xe], Type [ODBC], User [final]
+LKPDP_1:READER_1_1> BLKR_16051 [2025-04-10 02:01:30.792] Source database connection [Conn_012X0N0B000000000009] code page: [UTF-8 encoding of Unicode]
+TRANSF_1_1_1> PETL_24091 [2025-04-10 02:01:30.792] Thread [TRANSF_1_1_1] has the ID [13].
+READER_1_2_1> PETL_24091 [2025-04-10 02:01:30.792] Thread [READER_1_2_1] has the ID [14].
+READER_1_2_1> DBG_21437 [2025-04-10 02:01:30.793] Reader: Source is a file-based source.
+READER_1_2_1> FR_3118 [2025-04-10 02:01:30.793] source [Source] code page: [UTF-8 encoding of Unicode]
+READER_1_2_1> FR_3071 [2025-04-10 02:01:30.793] Maximum Line sequential buffer length is 1024.
+READER_1_2_1> BLKR_16003 [2025-04-10 02:01:30.793] Initialization completed successfully.
+TRANSF_1_2_1> PETL_24091 [2025-04-10 02:01:30.794] Thread [TRANSF_1_2_1] has the ID [15].
+READER_1_3_1> PETL_24091 [2025-04-10 02:01:30.794] Thread [READER_1_3_1] has the ID [16].
+READER_1_3_1> DBG_21437 [2025-04-10 02:01:30.794] Reader: Source is a file-based source.
+READER_1_3_1> FR_3118 [2025-04-10 02:01:30.796] source [Source2] code page: [UTF-8 encoding of Unicode]
+READER_1_3_1> FR_3071 [2025-04-10 02:01:30.796] Maximum Line sequential buffer length is 1026.
+READER_1_3_1> BLKR_16003 [2025-04-10 02:01:30.796] Initialization completed successfully.
+TRANSF_1_3_1> PETL_24091 [2025-04-10 02:01:30.796] Thread [TRANSF_1_3_1] has the ID [17].
+TRANSF_1_4_1> PETL_24091 [2025-04-10 02:01:30.796] Thread [TRANSF_1_4_1] has the ID [18].
+WRITER_1_*_1> PETL_24091 [2025-04-10 02:01:30.796] Thread [WRITER_1_*_1] has the ID [19].
+WRITER_1_*_1> WRT_8147 [2025-04-10 02:01:30.797] Writer: Target is Database [odbc://dbtype=Oracle;host=localhost;port=1522;database=xe], Type [ODBC], User [final], Bulk Mode [OFF]
+LKPDP_1:READER_1_1> CMN_1021 [2025-04-10 02:01:30.808] Database driver event...
+CMN_1021 [Reading driver properties from : C:\Program Files\Informatica Cloud Secure Agent\apps\Data_Integration_Server\72.0.1.1\ICS\main\bin\rdtm/../../../../drivers/driver.properties
+DTM flag to determine driver name is not found hence default to [DataDirect CLOSED 8.0 Oracle Wire Protocol for Informatica - BASE] driver.
+ODBC Event Using array fetches.
+ODBC Event Using Single Row Inserts. connect string = [Driver=DataDirect CLOSED 8.0 Oracle Wire Protocol for Informatica - BASE;Host=localhost;ServiceName=xe;Port=1522;UID=final;AS=6000000;EBL=0;ENS=1;IACP=4;ETWT=1;WorkArounds2=2;EnableEmptyLobs=1]. userid = [final]
+ODBC Version:	03.80.0000
+.
+DBMS Name:	Oracle
+.
+DBMS Version:	11.02.0000 Oracle 11.2.0.2.0
+.
+Driver Name:	dwora28.dll
+.
+Driver Version:	08.02.3072 (B1917, U1723)
+.
+Driver ODBC Version:	03.52
+.]
+
+LKPDP_1:READER_1_1> BLKR_16003 [2025-04-10 02:01:30.808] Initialization completed successfully.
+LKPDP_1:TRANSF_1_1> PETL_24091 [2025-04-10 02:01:30.808] Thread [LKPDP_1:TRANSF_1_1] has the ID [20].
+LKPDP_1:READER_1_1> BLKR_16007 [2025-04-10 02:01:30.808] Reader run started.
+LKPDP_1:READER_1_1> RR_4049 [2025-04-10 02:01:30.809] SQL Query issued to database : (Thu Apr 10 02:01:30 2025)
+LKPDP_1:READER_1_1> RR_4050 [2025-04-10 02:01:30.811] First row returned from database to reader : (Thu Apr 10 02:01:30 2025)
+LKPDP_1:TRANSF_1_1> DBG_21079 [2025-04-10 02:01:30.811] Creating Lookup Cache : (Thu Apr 10 02:01:30 2025)
+LKPDP_1:TRANSF_1_1> DBG_21682 [2025-04-10 02:01:30.811] Lookup table row count : 12
+LKPDP_1:TRANSF_1_1> DBG_21297 [2025-04-10 02:01:30.811] Lookup cache row count : 12
+
+LKPDP_1:TRANSF_1_1> DBG_21294 [2025-04-10 02:01:30.811] Lookup cache creation completed : (Thu Apr 10 02:01:30 2025)
+LKPDP_1:TRANSF_1_1> CMN_1671 [2025-04-10 02:01:30.811] Created new cache files PMLKUP21164400_11_0W64.[dat/idx] in directory C:\PROGRA~1\INFORM~1\apps\Data_Integration_Server\data\cache for Lookup [Lookup_Stud].
+LKPDP_1:TRANSF_1_1> DBG_21641 [2025-04-10 02:01:30.811] Lookup_Stud: Index cache size = [29829600], Data cache size = [59654144]
+LKPDP_1:TRANSF_1_1> DBG_21216 [2025-04-10 02:01:30.811] Finished transformations for Source Qualifier [Lookup_Stud{{DSQ}}]. Total errors [0] 
+LKPDP_1:READER_1_1> BLKR_16008 [2025-04-10 02:01:30.811] Reader run completed.
+DIRECTOR> TT_11184 [2025-04-10 02:01:30.812] Starting additional concurrent pipeline to build the lookup cache needed by Lookup transformation [Lookup_College].
+LKPDP_2> TM_6660 [2025-04-10 02:01:30.812] Total Buffer Pool size is 609824 bytes and Block size is 65536 bytes.
+LKPDP_2:READER_1_1> PETL_24091 [2025-04-10 02:01:30.813] Thread [LKPDP_2:READER_1_1] has the ID [21].
+LKPDP_2:READER_1_1> DBG_21438 [2025-04-10 02:01:30.813] Reader: Source is [odbc://dbtype=Oracle;host=localhost;port=1522;database=xe], Type [ODBC], User [final]
+LKPDP_2:READER_1_1> BLKR_16051 [2025-04-10 02:01:30.813] Source database connection [Conn_012X0N0B000000000009] code page: [UTF-8 encoding of Unicode]
+WRITER_1_*_1> CMN_1021 [2025-04-10 02:01:30.820] Database driver event...
+CMN_1021 [Reading driver properties from : C:\Program Files\Informatica Cloud Secure Agent\apps\Data_Integration_Server\72.0.1.1\ICS\main\bin\rdtm/../../../../drivers/driver.properties
+DTM flag to determine driver name is not found hence default to [DataDirect CLOSED 8.0 Oracle Wire Protocol for Informatica - BASE] driver.
+ODBC Event Using array fetches.
+ODBC Event Using Single Row Inserts. connect string = [Driver=DataDirect CLOSED 8.0 Oracle Wire Protocol for Informatica - BASE;Host=localhost;ServiceName=xe;Port=1522;UID=final;AS=6000000;EBL=0;ENS=1;IACP=4;ETWT=1;WorkArounds2=2;EnableEmptyLobs=1]. userid = [final]
+ODBC Version:	03.80.0000
+.
+DBMS Name:	Oracle
+.
+DBMS Version:	11.02.0000 Oracle 11.2.0.2.0
+.
+Driver Name:	dwora28.dll
+.
+Driver Version:	08.02.3072 (B1917, U1723)
+.
+Driver ODBC Version:	03.52
+.]
+
+WRITER_1_*_1> WRT_8221 [2025-04-10 02:01:30.820] Target database connection [Conn_012X0N0B000000000009] code page: [UTF-8 encoding of Unicode]
+WRITER_1_*_1> WRT_8124 [2025-04-10 02:01:30.822] Target Table CDW_UAS_STG_RESULT :SQL INSERT statement:
+INSERT INTO FINAL.CDW_UAS_STG_RESULT(CDW_P_RESULT_DSET_KEY,RESULT_F_PERIOD_KEY,RESULT_F_STUDENT_KEY,RESULT_F_DEPARTMENT_KEY,RESULT_F_COLLEGE_CODE,RESULT_F_COLLEGE_NAME,RESULT_F_COURSE_CODE,RESULT_F_COURSE_NAME,RESULT_F_FACULTY_NO,RESULT_MARKS,RESULT_GRADE,CREATED_DATE,CREATED_BY)  VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+WRITER_1_*_1> WRT_8020 [2025-04-10 02:01:30.822] No column marked as primary key for table [CDW_UAS_STG_RESULT]. UPDATEs Not Supported.
+WRITER_1_*_1> WRT_8147 [2025-04-10 02:01:30.822] Writer: Target is Database [odbc://dbtype=Oracle;host=localhost;port=1522;database=xe], Type [ODBC], User [final], Bulk Mode [OFF]
+WRITER_1_*_1> WRT_8124 [2025-04-10 02:01:30.823] Target Table CDW_UAS_ERR :SQL INSERT statement:
+INSERT INTO FINAL.CDW_UAS_ERR(CDW_P_RESULT_DEST_KEY,ERROR_CODE,ERR_MSG,ERR_COLUMN_NM)  VALUES ( ?, ?, ?, ?) 
+WRITER_1_*_1> WRT_8020 [2025-04-10 02:01:30.823] No column marked as primary key for table [CDW_UAS_ERR]. UPDATEs Not Supported.
+WRITER_1_*_1> WRT_8270 [2025-04-10 02:01:30.823] Target connection group #1 consists of target(s) [CDW_UAS_STG_RESULT, CDW_UAS_ERR]
+WRITER_1_*_1> WRT_8003 [2025-04-10 02:01:30.823] Writer initialization complete.
+READER_1_1_1> BLKR_16007 [2025-04-10 02:01:30.823] Reader run started.
+READER_1_2_1> BLKR_16007 [2025-04-10 02:01:30.824] Reader run started.
+WRITER_1_*_1> WRT_8005 [2025-04-10 02:01:30.824] Writer run started.
+READER_1_3_1> BLKR_16007 [2025-04-10 02:01:30.824] Reader run started.
+WRITER_1_*_1> WRT_8158 [2025-04-10 02:01:30.824] 
+
+*****START LOAD SESSION*****
+
+Load Start Time: Thu Apr 10 02:01:30 2025
+
+Target tables:
+
+     CDW_UAS_STG_RESULT
+     CDW_UAS_ERR
+
+
+READER_1_1_1> _3120 [2025-04-10 02:01:30.824] Number of column in metadata are more than source file.
+READER_1_1_1> FR_3076 [2025-04-10 02:01:30.824] Skipped over [1] lines.
+READER_1_2_1> DBG_21430 [2025-04-10 02:01:30.824] Reading data from input source file [C:\Users\91739\OneDrive\Documents\final_cts_project\CDW_UAS_F_RESULT_CL_03.txt] : (Thu Apr 10 02:01:30 2025)
+READER_1_1_1> DBG_21430 [2025-04-10 02:01:30.824] Reading data from input source file [C:\Users\91739\OneDrive\Documents\final_cts_project\CDW_UAS_F_RESULT_CL_02.txt] : (Thu Apr 10 02:01:30 2025)
+READER_1_2_1> BLKR_16019 [2025-04-10 02:01:30.824] Read [3] rows, read [0] error rows for source table [CDW_UAS_F_RESULT_CL_03_txt] instance name [CDW_UAS_F_RESULT_CL_03_txt]
+READER_1_2_1> BLKR_16008 [2025-04-10 02:01:30.824] Reader run completed.
+READER_1_1_1> BLKR_16019 [2025-04-10 02:01:30.824] Read [3] rows, read [0] error rows for source table [CDW_UAS_F_RESULT_CL_02_txt] instance name [CDW_UAS_F_RESULT_CL_02_txt]
+READER_1_1_1> BLKR_16008 [2025-04-10 02:01:30.824] Reader run completed.
+TRANSF_1_2_1> DBG_21216 [2025-04-10 02:01:30.824] Finished transformations for Source Qualifier [Source]. Total errors [0] 
+TRANSF_1_1_1> DBG_21216 [2025-04-10 02:01:30.824] Finished transformations for Source Qualifier [Source1]. Total errors [0] 
+READER_1_3_1> _3120 [2025-04-10 02:01:30.824] Number of column in metadata are more than source file.
+READER_1_3_1> FR_3076 [2025-04-10 02:01:30.824] Skipped over [1] lines.
+TRANSF_1_4_1> TT_11186 [2025-04-10 02:01:30.824] Lookup cache of [Lookup_College], previously started by an additional concurrent pipeline, is now needed on demand.
+READER_1_3_1> DBG_21430 [2025-04-10 02:01:30.824] Reading data from input source file [C:\Users\91739\OneDrive\Documents\final_cts_project\CDW_UAS_F_RESULT_CL_1.txt] : (Thu Apr 10 02:01:30 2025)
+TRANSF_1_4_1> TT_11184 [2025-04-10 02:01:30.824] Starting additional concurrent pipeline to build the lookup cache needed by Lookup transformation [Lookup_Faculty].
+READER_1_3_1> BLKR_16019 [2025-04-10 02:01:30.824] Read [3] rows, read [0] error rows for source table [CDW_UAS_F_RESULT_CL_1_txt] instance name [CDW_UAS_F_RESULT_CL_1_txt]
+READER_1_3_1> BLKR_16008 [2025-04-10 02:01:30.824] Reader run completed.
+TRANSF_1_3_1> DBG_21216 [2025-04-10 02:01:30.824] Finished transformations for Source Qualifier [Source2]. Total errors [0] 
+LKPDP_3> TM_6660 [2025-04-10 02:01:30.824] Total Buffer Pool size is 609824 bytes and Block size is 65536 bytes.
+LKPDP_3:READER_1_1> PETL_24091 [2025-04-10 02:01:30.825] Thread [LKPDP_3:READER_1_1] has the ID [22].
+LKPDP_3:READER_1_1> DBG_21438 [2025-04-10 02:01:30.825] Reader: Source is [odbc://dbtype=Oracle;host=localhost;port=1522;database=xe], Type [ODBC], User [final]
+LKPDP_3:READER_1_1> BLKR_16051 [2025-04-10 02:01:30.826] Source database connection [Conn_012X0N0B000000000009] code page: [UTF-8 encoding of Unicode]
+LKPDP_2:READER_1_1> CMN_1021 [2025-04-10 02:01:30.833] Database driver event...
+CMN_1021 [Reading driver properties from : C:\Program Files\Informatica Cloud Secure Agent\apps\Data_Integration_Server\72.0.1.1\ICS\main\bin\rdtm/../../../../drivers/driver.properties
+DTM flag to determine driver name is not found hence default to [DataDirect CLOSED 8.0 Oracle Wire Protocol for Informatica - BASE] driver.
+ODBC Event Using array fetches.
+ODBC Event Using Single Row Inserts. connect string = [Driver=DataDirect CLOSED 8.0 Oracle Wire Protocol for Informatica - BASE;Host=localhost;ServiceName=xe;Port=1522;UID=final;AS=6000000;EBL=0;ENS=1;IACP=4;ETWT=1;WorkArounds2=2;EnableEmptyLobs=1]. userid = [final]
+ODBC Version:	03.80.0000
+.
+DBMS Name:	Oracle
+.
+DBMS Version:	11.02.0000 Oracle 11.2.0.2.0
+.
+Driver Name:	dwora28.dll
+.
+Driver Version:	08.02.3072 (B1917, U1723)
+.
+Driver ODBC Version:	03.52
+.]
+
+LKPDP_2:READER_1_1> BLKR_16003 [2025-04-10 02:01:30.834] Initialization completed successfully.
+LKPDP_2:TRANSF_1_1> PETL_24091 [2025-04-10 02:01:30.834] Thread [LKPDP_2:TRANSF_1_1] has the ID [23].
+LKPDP_2:READER_1_1> BLKR_16007 [2025-04-10 02:01:30.834] Reader run started.
+LKPDP_2:READER_1_1> RR_4049 [2025-04-10 02:01:30.834] SQL Query issued to database : (Thu Apr 10 02:01:30 2025)
+LKPDP_2:READER_1_1> RR_4050 [2025-04-10 02:01:30.836] First row returned from database to reader : (Thu Apr 10 02:01:30 2025)
+LKPDP_2:TRANSF_1_1> DBG_21079 [2025-04-10 02:01:30.836] Creating Lookup Cache : (Thu Apr 10 02:01:30 2025)
+LKPDP_2:TRANSF_1_1> DBG_21682 [2025-04-10 02:01:30.836] Lookup table row count : 10
+LKPDP_2:TRANSF_1_1> DBG_21297 [2025-04-10 02:01:30.836] Lookup cache row count : 10
+
+LKPDP_2:TRANSF_1_1> DBG_21294 [2025-04-10 02:01:30.836] Lookup cache creation completed : (Thu Apr 10 02:01:30 2025)
+LKPDP_2:TRANSF_1_1> CMN_1671 [2025-04-10 02:01:30.836] Created new cache files PMLKUP21164400_12_0W64.[dat/idx] in directory C:\PROGRA~1\INFORM~1\apps\Data_Integration_Server\data\cache for Lookup [Lookup_College].
+LKPDP_2:TRANSF_1_1> DBG_21641 [2025-04-10 02:01:30.836] Lookup_College: Index cache size = [29829120], Data cache size = [59654144]
+LKPDP_2:TRANSF_1_1> DBG_21216 [2025-04-10 02:01:30.836] Finished transformations for Source Qualifier [Lookup_College{{DSQ}}]. Total errors [0] 
+LKPDP_2:READER_1_1> BLKR_16008 [2025-04-10 02:01:30.836] Reader run completed.
+TRANSF_1_4_1> TT_11186 [2025-04-10 02:01:30.837] Lookup cache of [Lookup_Faculty], previously started by an additional concurrent pipeline, is now needed on demand.
+TRANSF_1_4_1> TT_11184 [2025-04-10 02:01:30.837] Starting additional concurrent pipeline to build the lookup cache needed by Lookup transformation [Lookup_Dept].
+LKPDP_4> TM_6660 [2025-04-10 02:01:30.838] Total Buffer Pool size is 609824 bytes and Block size is 65536 bytes.
+LKPDP_4:READER_1_1> PETL_24091 [2025-04-10 02:01:30.838] Thread [LKPDP_4:READER_1_1] has the ID [24].
+LKPDP_4:READER_1_1> DBG_21438 [2025-04-10 02:01:30.838] Reader: Source is [odbc://dbtype=Oracle;host=localhost;port=1522;database=xe], Type [ODBC], User [final]
+LKPDP_4:READER_1_1> BLKR_16051 [2025-04-10 02:01:30.838] Source database connection [Conn_012X0N0B000000000009] code page: [UTF-8 encoding of Unicode]
+LKPDP_3:READER_1_1> CMN_1021 [2025-04-10 02:01:30.846] Database driver event...
+CMN_1021 [Reading driver properties from : C:\Program Files\Informatica Cloud Secure Agent\apps\Data_Integration_Server\72.0.1.1\ICS\main\bin\rdtm/../../../../drivers/driver.properties
+DTM flag to determine driver name is not found hence default to [DataDirect CLOSED 8.0 Oracle Wire Protocol for Informatica - BASE] driver.
+ODBC Event Using array fetches.
+ODBC Event Using Single Row Inserts. connect string = [Driver=DataDirect CLOSED 8.0 Oracle Wire Protocol for Informatica - BASE;Host=localhost;ServiceName=xe;Port=1522;UID=final;AS=6000000;EBL=0;ENS=1;IACP=4;ETWT=1;WorkArounds2=2;EnableEmptyLobs=1]. userid = [final]
+ODBC Version:	03.80.0000
+.
+DBMS Name:	Oracle
+.
+DBMS Version:	11.02.0000 Oracle 11.2.0.2.0
+.
+Driver Name:	dwora28.dll
+.
+Driver Version:	08.02.3072 (B1917, U1723)
+.
+Driver ODBC Version:	03.52
+.]
+
+LKPDP_3:READER_1_1> BLKR_16003 [2025-04-10 02:01:30.846] Initialization completed successfully.
+LKPDP_3:TRANSF_1_1> PETL_24091 [2025-04-10 02:01:30.846] Thread [LKPDP_3:TRANSF_1_1] has the ID [25].
+LKPDP_3:READER_1_1> BLKR_16007 [2025-04-10 02:01:30.846] Reader run started.
+LKPDP_3:READER_1_1> RR_4049 [2025-04-10 02:01:30.847] SQL Query issued to database : (Thu Apr 10 02:01:30 2025)
+LKPDP_3:READER_1_1> RR_4050 [2025-04-10 02:01:30.849] First row returned from database to reader : (Thu Apr 10 02:01:30 2025)
+LKPDP_3:TRANSF_1_1> DBG_21079 [2025-04-10 02:01:30.849] Creating Lookup Cache : (Thu Apr 10 02:01:30 2025)
+LKPDP_3:TRANSF_1_1> DBG_21682 [2025-04-10 02:01:30.849] Lookup table row count : 8
+LKPDP_3:TRANSF_1_1> DBG_21297 [2025-04-10 02:01:30.849] Lookup cache row count : 8
+
+LKPDP_3:TRANSF_1_1> DBG_21294 [2025-04-10 02:01:30.849] Lookup cache creation completed : (Thu Apr 10 02:01:30 2025)
+LKPDP_3:TRANSF_1_1> CMN_1671 [2025-04-10 02:01:30.849] Created new cache files PMLKUP21164400_13_0W64.[dat/idx] in directory C:\PROGRA~1\INFORM~1\apps\Data_Integration_Server\data\cache for Lookup [Lookup_Faculty].
+LKPDP_3:TRANSF_1_1> DBG_21641 [2025-04-10 02:01:30.849] Lookup_Faculty: Index cache size = [29828400], Data cache size = [59654144]
+LKPDP_3:TRANSF_1_1> DBG_21216 [2025-04-10 02:01:30.849] Finished transformations for Source Qualifier [Lookup_Faculty{{DSQ}}]. Total errors [0] 
+LKPDP_3:READER_1_1> BLKR_16008 [2025-04-10 02:01:30.849] Reader run completed.
+TRANSF_1_4_1> TT_11186 [2025-04-10 02:01:30.850] Lookup cache of [Lookup_Dept], previously started by an additional concurrent pipeline, is now needed on demand.
+TRANSF_1_4_1> TT_11184 [2025-04-10 02:01:30.850] Starting additional concurrent pipeline to build the lookup cache needed by Lookup transformation [Lookup_Course].
+LKPDP_5> TM_6660 [2025-04-10 02:01:30.851] Total Buffer Pool size is 609824 bytes and Block size is 65536 bytes.
+LKPDP_5:READER_1_1> PETL_24091 [2025-04-10 02:01:30.851] Thread [LKPDP_5:READER_1_1] has the ID [26].
+LKPDP_5:READER_1_1> DBG_21438 [2025-04-10 02:01:30.851] Reader: Source is [odbc://dbtype=Oracle;host=localhost;port=1522;database=xe], Type [ODBC], User [final]
+LKPDP_5:READER_1_1> BLKR_16051 [2025-04-10 02:01:30.851] Source database connection [Conn_012X0N0B000000000009] code page: [UTF-8 encoding of Unicode]
+LKPDP_4:READER_1_1> CMN_1021 [2025-04-10 02:01:30.859] Database driver event...
+CMN_1021 [Reading driver properties from : C:\Program Files\Informatica Cloud Secure Agent\apps\Data_Integration_Server\72.0.1.1\ICS\main\bin\rdtm/../../../../drivers/driver.properties
+DTM flag to determine driver name is not found hence default to [DataDirect CLOSED 8.0 Oracle Wire Protocol for Informatica - BASE] driver.
+ODBC Event Using array fetches.
+ODBC Event Using Single Row Inserts. connect string = [Driver=DataDirect CLOSED 8.0 Oracle Wire Protocol for Informatica - BASE;Host=localhost;ServiceName=xe;Port=1522;UID=final;AS=6000000;EBL=0;ENS=1;IACP=4;ETWT=1;WorkArounds2=2;EnableEmptyLobs=1]. userid = [final]
+ODBC Version:	03.80.0000
+.
+DBMS Name:	Oracle
+.
+DBMS Version:	11.02.0000 Oracle 11.2.0.2.0
+.
+Driver Name:	dwora28.dll
+.
+Driver Version:	08.02.3072 (B1917, U1723)
+.
+Driver ODBC Version:	03.52
+.]
+
+LKPDP_4:READER_1_1> BLKR_16003 [2025-04-10 02:01:30.859] Initialization completed successfully.
+LKPDP_4:TRANSF_1_1> PETL_24091 [2025-04-10 02:01:30.859] Thread [LKPDP_4:TRANSF_1_1] has the ID [27].
+LKPDP_4:READER_1_1> BLKR_16007 [2025-04-10 02:01:30.859] Reader run started.
+LKPDP_4:READER_1_1> RR_4049 [2025-04-10 02:01:30.860] SQL Query issued to database : (Thu Apr 10 02:01:30 2025)
+LKPDP_4:READER_1_1> RR_4050 [2025-04-10 02:01:30.862] First row returned from database to reader : (Thu Apr 10 02:01:30 2025)
+LKPDP_4:TRANSF_1_1> DBG_21079 [2025-04-10 02:01:30.862] Creating Lookup Cache : (Thu Apr 10 02:01:30 2025)
+LKPDP_4:TRANSF_1_1> DBG_21682 [2025-04-10 02:01:30.862] Lookup table row count : 8
+LKPDP_4:TRANSF_1_1> DBG_21297 [2025-04-10 02:01:30.862] Lookup cache row count : 8
+
+LKPDP_4:TRANSF_1_1> DBG_21294 [2025-04-10 02:01:30.862] Lookup cache creation completed : (Thu Apr 10 02:01:30 2025)
+LKPDP_4:TRANSF_1_1> CMN_1671 [2025-04-10 02:01:30.862] Created new cache files PMLKUP21164400_14_0W64.[dat/idx] in directory C:\PROGRA~1\INFORM~1\apps\Data_Integration_Server\data\cache for Lookup [Lookup_Dept].
+LKPDP_4:TRANSF_1_1> DBG_21641 [2025-04-10 02:01:30.862] Lookup_Dept: Index cache size = [29829600], Data cache size = [59654144]
+LKPDP_4:TRANSF_1_1> DBG_21216 [2025-04-10 02:01:30.862] Finished transformations for Source Qualifier [Lookup_Dept{{DSQ}}]. Total errors [0] 
+LKPDP_4:READER_1_1> BLKR_16008 [2025-04-10 02:01:30.862] Reader run completed.
+TRANSF_1_4_1> TT_11186 [2025-04-10 02:01:30.863] Lookup cache of [Lookup_Course], previously started by an additional concurrent pipeline, is now needed on demand.
+TRANSF_1_4_1> TT_11184 [2025-04-10 02:01:30.863] Starting additional concurrent pipeline to build the lookup cache needed by Lookup transformation [Lookup_Time].
+LKPDP_6> TM_6660 [2025-04-10 02:01:30.864] Total Buffer Pool size is 609824 bytes and Block size is 65536 bytes.
+LKPDP_6:READER_1_1> PETL_24091 [2025-04-10 02:01:30.864] Thread [LKPDP_6:READER_1_1] has the ID [28].
+LKPDP_6:READER_1_1> DBG_21438 [2025-04-10 02:01:30.864] Reader: Source is [odbc://dbtype=Oracle;host=localhost;port=1522;database=xe], Type [ODBC], User [final]
+LKPDP_6:READER_1_1> BLKR_16051 [2025-04-10 02:01:30.864] Source database connection [Conn_012X0N0B000000000009] code page: [UTF-8 encoding of Unicode]
+LKPDP_5:READER_1_1> CMN_1021 [2025-04-10 02:01:30.872] Database driver event...
+CMN_1021 [Reading driver properties from : C:\Program Files\Informatica Cloud Secure Agent\apps\Data_Integration_Server\72.0.1.1\ICS\main\bin\rdtm/../../../../drivers/driver.properties
+DTM flag to determine driver name is not found hence default to [DataDirect CLOSED 8.0 Oracle Wire Protocol for Informatica - BASE] driver.
+ODBC Event Using array fetches.
+ODBC Event Using Single Row Inserts. connect string = [Driver=DataDirect CLOSED 8.0 Oracle Wire Protocol for Informatica - BASE;Host=localhost;ServiceName=xe;Port=1522;UID=final;AS=6000000;EBL=0;ENS=1;IACP=4;ETWT=1;WorkArounds2=2;EnableEmptyLobs=1]. userid = [final]
+ODBC Version:	03.80.0000
+.
+DBMS Name:	Oracle
+.
+DBMS Version:	11.02.0000 Oracle 11.2.0.2.0
+.
+Driver Name:	dwora28.dll
+.
+Driver Version:	08.02.3072 (B1917, U1723)
+.
+Driver ODBC Version:	03.52
+.]
+
+LKPDP_5:READER_1_1> BLKR_16003 [2025-04-10 02:01:30.872] Initialization completed successfully.
+LKPDP_5:TRANSF_1_1> PETL_24091 [2025-04-10 02:01:30.873] Thread [LKPDP_5:TRANSF_1_1] has the ID [29].
+LKPDP_5:READER_1_1> BLKR_16007 [2025-04-10 02:01:30.873] Reader run started.
+LKPDP_5:READER_1_1> RR_4049 [2025-04-10 02:01:30.873] SQL Query issued to database : (Thu Apr 10 02:01:30 2025)
+LKPDP_5:READER_1_1> RR_4050 [2025-04-10 02:01:30.874] First row returned from database to reader : (Thu Apr 10 02:01:30 2025)
+LKPDP_5:TRANSF_1_1> DBG_21079 [2025-04-10 02:01:30.875] Creating Lookup Cache : (Thu Apr 10 02:01:30 2025)
+LKPDP_5:TRANSF_1_1> DBG_21682 [2025-04-10 02:01:30.875] Lookup table row count : 16
+LKPDP_5:TRANSF_1_1> DBG_21297 [2025-04-10 02:01:30.875] Lookup cache row count : 16
+
+LKPDP_5:TRANSF_1_1> DBG_21294 [2025-04-10 02:01:30.875] Lookup cache creation completed : (Thu Apr 10 02:01:30 2025)
+LKPDP_5:TRANSF_1_1> CMN_1671 [2025-04-10 02:01:30.875] Created new cache files PMLKUP21164400_15_0W64.[dat/idx] in directory C:\PROGRA~1\INFORM~1\apps\Data_Integration_Server\data\cache for Lookup [Lookup_Course].
+LKPDP_5:TRANSF_1_1> DBG_21641 [2025-04-10 02:01:30.875] Lookup_Course: Index cache size = [29828400], Data cache size = [59654144]
+LKPDP_5:TRANSF_1_1> DBG_21216 [2025-04-10 02:01:30.875] Finished transformations for Source Qualifier [Lookup_Course{{DSQ}}]. Total errors [0] 
+LKPDP_5:READER_1_1> BLKR_16008 [2025-04-10 02:01:30.875] Reader run completed.
+TRANSF_1_4_1> TT_11186 [2025-04-10 02:01:30.876] Lookup cache of [Lookup_Time], previously started by an additional concurrent pipeline, is now needed on demand.
+TRANSF_1_4_1> TT_11185 [2025-04-10 02:01:30.876] No more lookup cache to build by additional concurrent pipeline in the current concurrent source set.
+LKPDP_6:READER_1_1> CMN_1021 [2025-04-10 02:01:30.885] Database driver event...
+CMN_1021 [Reading driver properties from : C:\Program Files\Informatica Cloud Secure Agent\apps\Data_Integration_Server\72.0.1.1\ICS\main\bin\rdtm/../../../../drivers/driver.properties
+DTM flag to determine driver name is not found hence default to [DataDirect CLOSED 8.0 Oracle Wire Protocol for Informatica - BASE] driver.
+ODBC Event Using array fetches.
+ODBC Event Using Single Row Inserts. connect string = [Driver=DataDirect CLOSED 8.0 Oracle Wire Protocol for Informatica - BASE;Host=localhost;ServiceName=xe;Port=1522;UID=final;AS=6000000;EBL=0;ENS=1;IACP=4;ETWT=1;WorkArounds2=2;EnableEmptyLobs=1]. userid = [final]
+ODBC Version:	03.80.0000
+.
+DBMS Name:	Oracle
+.
+DBMS Version:	11.02.0000 Oracle 11.2.0.2.0
+.
+Driver Name:	dwora28.dll
+.
+Driver Version:	08.02.3072 (B1917, U1723)
+.
+Driver ODBC Version:	03.52
+.]
+
+LKPDP_6:READER_1_1> BLKR_16003 [2025-04-10 02:01:30.885] Initialization completed successfully.
+LKPDP_6:TRANSF_1_1> PETL_24091 [2025-04-10 02:01:30.886] Thread [LKPDP_6:TRANSF_1_1] has the ID [30].
+LKPDP_6:READER_1_1> BLKR_16007 [2025-04-10 02:01:30.886] Reader run started.
+LKPDP_6:READER_1_1> RR_4049 [2025-04-10 02:01:30.886] SQL Query issued to database : (Thu Apr 10 02:01:30 2025)
+LKPDP_6:READER_1_1> RR_4050 [2025-04-10 02:01:30.889] First row returned from database to reader : (Thu Apr 10 02:01:30 2025)
+LKPDP_6:TRANSF_1_1> DBG_21079 [2025-04-10 02:01:30.889] Creating Lookup Cache : (Thu Apr 10 02:01:30 2025)
+LKPDP_6:TRANSF_1_1> DBG_21682 [2025-04-10 02:01:30.889] Lookup table row count : 11
+LKPDP_6:TRANSF_1_1> DBG_21297 [2025-04-10 02:01:30.889] Lookup cache row count : 11
+
+LKPDP_6:TRANSF_1_1> DBG_21294 [2025-04-10 02:01:30.889] Lookup cache creation completed : (Thu Apr 10 02:01:30 2025)
+LKPDP_6:TRANSF_1_1> CMN_1671 [2025-04-10 02:01:30.889] Created new cache files PMLKUP21164400_16_0W64.[dat/idx] in directory C:\PROGRA~1\INFORM~1\apps\Data_Integration_Server\data\cache for Lookup [Lookup_Time].
+LKPDP_6:TRANSF_1_1> DBG_21641 [2025-04-10 02:01:30.889] Lookup_Time: Index cache size = [29827600], Data cache size = [59654144]
+LKPDP_6:TRANSF_1_1> DBG_21216 [2025-04-10 02:01:30.889] Finished transformations for Source Qualifier [Lookup_Time{{DSQ}}]. Total errors [0] 
+LKPDP_6:READER_1_1> BLKR_16008 [2025-04-10 02:01:30.889] Reader run completed.
+TRANSF_1_4_1> DBG_21216 [2025-04-10 02:01:30.891] Finished transformations for Source Qualifier [Union]. Total errors [0] 
+WRITER_1_*_1> WRT_8167 [2025-04-10 02:01:30.891] Start loading table [CDW_UAS_STG_RESULT] at: Thu Apr 10 02:01:30 2025
+WRITER_1_*_1> WRT_8167 [2025-04-10 02:01:30.892] Start loading table [CDW_UAS_ERR] at: Thu Apr 10 02:01:30 2025
+WRITER_1_*_1> WRT_8168 [2025-04-10 02:01:30.893] End loading table [CDW_UAS_STG_RESULT] at: Thu Apr 10 02:01:30 2025
+WRITER_1_*_1> WRT_8141 [2025-04-10 02:01:30.893] 
+Commit on end-of-data  Thu Apr 10 02:01:30 2025
+===================================================
+
+WRT_8036 Target: CDW_UAS_STG_RESULT (Instance Name: [CDW_UAS_STG_RESULT])
+WRT_8038 Inserted rows - Requested: 5          Applied: 5          Rejected: 0          Affected: 5         
+
+WRT_8036 Target: CDW_UAS_ERR (Instance Name: [CDW_UAS_ERR])
+WRT_8038 Inserted rows - Requested: 4          Applied: 4          Rejected: 0          Affected: 4         
+
+WRITER_1_*_1> WRT_8168 [2025-04-10 02:01:30.893] End loading table [CDW_UAS_ERR] at: Thu Apr 10 02:01:30 2025
+WRITER_1_*_1> WRT_8035 [2025-04-10 02:01:30.893] Load complete time: Thu Apr 10 02:01:30 2025
+
+LOAD SUMMARY
+============
+
+WRT_8036 Target: CDW_UAS_STG_RESULT (Instance Name: [CDW_UAS_STG_RESULT])
+WRT_8038 Inserted rows - Requested: 5          Applied: 5          Rejected: 0          Affected: 5         
+
+WRT_8036 Target: CDW_UAS_ERR (Instance Name: [CDW_UAS_ERR])
+WRT_8038 Inserted rows - Requested: 4          Applied: 4          Rejected: 0          Affected: 4         
+
+
+WRITER_1_*_1> WRT_8043 [2025-04-10 02:01:30.893] *****END LOAD SESSION*****
+WRITER_1_*_1> WRT_8006 [2025-04-10 02:01:30.900] Writer run completed.
+MANAGER> PETL_24031 [2025-04-10 02:01:30.900] 
+***** RUN INFO FOR TGT LOAD ORDER GROUP [1], CONCURRENT SET [1] *****
+Thread [READER_1_1_1] created for [the read stage] of partition point [Source1] has completed. The total run time was insufficient for any meaningful statistics.
+Thread [TRANSF_1_1_1] created for [the transformation stage] of partition point [Source1] has completed. The total run time was insufficient for any meaningful statistics.
+Thread [READER_1_2_1] created for [the read stage] of partition point [Source] has completed. The total run time was insufficient for any meaningful statistics.
+Thread [TRANSF_1_2_1] created for [the transformation stage] of partition point [Source] has completed. The total run time was insufficient for any meaningful statistics.
+Thread [READER_1_3_1] created for [the read stage] of partition point [Source2] has completed. The total run time was insufficient for any meaningful statistics.
+Thread [TRANSF_1_3_1] created for [the transformation stage] of partition point [Source2] has completed. The total run time was insufficient for any meaningful statistics.
+Thread [TRANSF_1_4_1] created for [the transformation stage] of partition point [Union] has completed. The total run time was insufficient for any meaningful statistics.
+Thread [WRITER_1_*_1] created for [the write stage] of partition point [CDW_UAS_STG_RESULT, CDW_UAS_ERR] has completed. The total run time was insufficient for any meaningful statistics.
+
+MAPPING> CMN_1793 [2025-04-10 02:01:31.974] The index cache size that would hold [12] rows in the lookup table for [Lookup_Stud], in memory, is [3600] bytes
+MAPPING> CMN_1792 [2025-04-10 02:01:31.974] The data cache size that would hold [12] rows in the lookup table for [Lookup_Stud], in memory, is [24576] bytes
+MAPPING> CMN_1793 [2025-04-10 02:01:31.974] The index cache size that would hold [10] rows in the lookup table for [Lookup_College], in memory, is [7680] bytes
+MAPPING> CMN_1792 [2025-04-10 02:01:31.974] The data cache size that would hold [10] rows in the lookup table for [Lookup_College], in memory, is [16384] bytes
+MAPPING> CMN_1793 [2025-04-10 02:01:31.974] The index cache size that would hold [8] rows in the lookup table for [Lookup_Faculty], in memory, is [8400] bytes
+MAPPING> CMN_1792 [2025-04-10 02:01:31.974] The data cache size that would hold [8] rows in the lookup table for [Lookup_Faculty], in memory, is [16384] bytes
+MAPPING> CMN_1793 [2025-04-10 02:01:31.974] The index cache size that would hold [8] rows in the lookup table for [Lookup_Dept], in memory, is [3600] bytes
+MAPPING> CMN_1792 [2025-04-10 02:01:31.974] The data cache size that would hold [8] rows in the lookup table for [Lookup_Dept], in memory, is [16384] bytes
+MAPPING> CMN_1793 [2025-04-10 02:01:31.974] The index cache size that would hold [16] rows in the lookup table for [Lookup_Course], in memory, is [8400] bytes
+MAPPING> CMN_1792 [2025-04-10 02:01:31.974] The data cache size that would hold [16] rows in the lookup table for [Lookup_Course], in memory, is [16384] bytes
+MAPPING> CMN_1793 [2025-04-10 02:01:31.974] The index cache size that would hold [11] rows in the lookup table for [Lookup_Time], in memory, is [4400] bytes
+MAPPING> CMN_1792 [2025-04-10 02:01:31.974] The data cache size that would hold [11] rows in the lookup table for [Lookup_Time], in memory, is [16384] bytes
+MANAGER> PETL_24005 [2025-04-10 02:01:31.974] Starting post-session tasks. : (Thu Apr 10 02:01:31 2025)
+POST-SESS> PETL_24091 [2025-04-10 02:01:31.976] Thread [POST-SESS] has the ID [31].
+MANAGER> PETL_24029 [2025-04-10 02:01:32.051] Post-session task completed successfully. : (Thu Apr 10 02:01:32 2025)
+MAPPING> TE_7216 [2025-04-10 02:01:32.052] Deleting cache files [PMLKUP21164400_11_0W64] for transformation [Lookup_Stud].
+MAPPING> TE_7216 [2025-04-10 02:01:32.053] Deleting cache files [PMLKUP21164400_12_0W64] for transformation [Lookup_College].
+MAPPING> TE_7216 [2025-04-10 02:01:32.054] Deleting cache files [PMLKUP21164400_13_0W64] for transformation [Lookup_Faculty].
+MAPPING> TE_7216 [2025-04-10 02:01:32.055] Deleting cache files [PMLKUP21164400_14_0W64] for transformation [Lookup_Dept].
+MAPPING> TE_7216 [2025-04-10 02:01:32.056] Deleting cache files [PMLKUP21164400_15_0W64] for transformation [Lookup_Course].
+MAPPING> TE_7216 [2025-04-10 02:01:32.058] Deleting cache files [PMLKUP21164400_16_0W64] for transformation [Lookup_Time].
+MAPPING> TM_6018 [2025-04-10 02:01:32.058] The session completed with [0] row transformation errors. 
+MANAGER> PETL_24002 [2025-04-10 02:01:32.704] Parallel Pipeline Engine finished.
+DIRECTOR> PETL_24012 [2025-04-10 02:01:32.765] Session run completed successfully.
+DIRECTOR> TM_6022 [2025-04-10 02:01:32.768] 
+
+SESSION LOAD SUMMARY
+================================================
+
+DIRECTOR> TM_6252 [2025-04-10 02:01:32.768] Source Load Summary.
+DIRECTOR> CMN_1740 [2025-04-10 02:01:32.768] Table: [Source1] (Instance Name: [Source1] Instance UI Name: [Source1])
+	 Output Rows [3], Affected Rows [3], Applied Rows [3], Rejected Rows [0]
+DIRECTOR> CMN_1740 [2025-04-10 02:01:32.768] Table: [Source] (Instance Name: [Source] Instance UI Name: [Source])
+	 Output Rows [3], Affected Rows [3], Applied Rows [3], Rejected Rows [0]
+DIRECTOR> CMN_1740 [2025-04-10 02:01:32.768] Table: [Source2] (Instance Name: [Source2] Instance UI Name: [Source2])
+	 Output Rows [3], Affected Rows [3], Applied Rows [3], Rejected Rows [0]
+DIRECTOR> TM_6253 [2025-04-10 02:01:32.768] Target Load Summary.
+DIRECTOR> CMN_1740 [2025-04-10 02:01:32.768] Table: [CDW_UAS_STG_RESULT] (Instance Name: [CDW_UAS_STG_RESULT] Instance UI Name: [Target])
+	 Output Rows [5], Affected Rows [5], Applied Rows [5], Rejected Rows [0]
+DIRECTOR> CMN_1740 [2025-04-10 02:01:32.768] Table: [CDW_UAS_ERR] (Instance Name: [CDW_UAS_ERR] Instance UI Name: [Target1])
+	 Output Rows [4], Affected Rows [4], Applied Rows [4], Rejected Rows [0]
+DIRECTOR> TM_6023 [2025-04-10 02:01:32.768] 
+===================================================
+
+DIRECTOR> TM_6020 [2025-04-10 02:01:32.768] Session [s_mtt_012X0N0Z00000000000N] completed at [Thu Apr 10 02:01:32 2025].

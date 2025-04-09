@@ -1,0 +1,20 @@
+> OIE_002 INFO 2025-04-09T21:27:02.091Z Starting export operation.
+Execution Client: UI
+Job Name: FACT_TABLE-1744234018881
+Organization: testing
+Job Id: 1P4rKScM5Vkf1Gf98kIaGu
+User: iics2k25@gmail.com
+> OIE_004 INFO 2025-04-09T21:27:02.171Z Successfully exported object [/SYS/_SYSTEM_PROJECT] of type [Project] id [cb55rhm7lMeipMa56D9TgW]
+> OIE_004 INFO 2025-04-09T21:27:02.171Z Successfully exported object [/Explore/Default] of type [Project] id [auYQEBQn9cBfYLcrqLgHGw]
+> OIE_004 INFO 2025-04-09T21:27:02.222Z Successfully exported object [/SYS/_SYSTEM_FOLDER] of type [Folder] id [a1whJETgJeGk06z2wtyuEH]
+> OIE_004 INFO 2025-04-09T21:27:02.314Z Successfully exported object [/SYS/MSI] of type [AgentGroup] id [iIp4t25H2MrhVlKaXGudcv]
+> OIE_004 INFO 2025-04-09T21:27:02.380Z Successfully exported object [/SYS/final_sql_connection] of type [Connection] id [ie720rWRf6eiLOdw5twiCg]
+> OIE_004 INFO 2025-04-09T21:27:02.521Z Successfully exported object [/Explore/Default/FACT_TABLE] of type [DTEMPLATE] id [1H7C9g08LK7jTqK2g8OWcs]
+> OIE_003 INFO 2025-04-09T21:27:02.521Z Finished export operation.
+Job Name: FACT_TABLE-1744234018881
+Start Time: 04/09/25 9:26 PM
+End Time: 04/09/25 9:27 PM
+Started by: iics2k25@gmail.com
+Start Method: UI
+Source Organization: testing
+Status: SUCCESSFUL
